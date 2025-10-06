@@ -48,7 +48,7 @@
         MongoDB is not connected. Add your connection string to the NodeJS
         environment (.env) and restart NodeJS. Example:
       </p>
-      <pre>MONGODB_URI=mongodb+srv://<wbr>dbuser:password<wbr>@cluster0.abc123.mongodb.net/<wbr>myDatabase</pre>
+      <pre>DATABASE_URL=mongodb+srv://<wbr>dbuser:password<wbr>@cluster0.abc123.mongodb.net/<wbr>myDatabase</pre>
     </section>
     <footer>
       <p>
@@ -57,7 +57,7 @@
         Design (Databases and Dynamic Data) in the
         <a href="https://ixd.sheridancollege.ca/"
           >Interaction Design Program at Sheridan College</a
-        >. This app uses <a href="https://www.mongodb.com/cloud/atlas/">MongoDB Atlas</a> to persist a collection of TODO items. It communicates with MongoDB using a <a href="https://mongoosejs.com/">Mongoose</a> Schema via a REST API built with <a href="https://expressjs.com/">Express</a>. API endpoints illustrate a mapping of <a href="https://www.mongodb.com/docs/manual/crud/">CRUD</a> operations onto <a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods">HTTP Verbs</a>. Data storage is
+        >. This app uses <a href="https://www.mongodb.com/cloud/atlas/">MongoDB Atlas</a> to persist a collection of TODO items. It communicates with MongoDB using <a href="https://www.prisma.io/">Prisma ORM</a> via a REST API built with <a href="https://expressjs.com/">Express</a>. API endpoints illustrate a mapping of <a href="https://www.mongodb.com/docs/manual/crud/">CRUD</a> operations onto <a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods">HTTP Verbs</a>. Data storage is
         handled on the frontend via a set of functions: <i>createData</i>, <i>readData</i>,
         <i>updateData</i>, <i>deleteData</i>, as per the the acronym
         <a href="https://developer.mozilla.org/en-US/docs/Glossary/CRUD">CRUD</a
