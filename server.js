@@ -1,12 +1,8 @@
-// connect to MongoDB
-import './database.js'
-
 // Express is a framework for building APIs and web apps
 // See also: https://expressjs.com/
 import express from 'express'
 // Initialize Express app
 const app = express()
-
 
 // Serve static files from /public folder (useful when running Node locally, optional on Vercel).
 app.use(express.static('public'))
