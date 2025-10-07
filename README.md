@@ -8,5 +8,5 @@ In order to use this demo you will need to add a connection string for MongoDB t
 ```
 DATABASE_URL=mongodb+srv://dbuser:password@cluster0.abc123.mongodb.net/myDatabase
 ```
-If you're using the free version of MongoDB (Atlas) You can find your connection string by logging in to the Atlas Dashboard in your [MongoDB Account](https://account.mongodb.com/account/login). 
+If you're using the free version of MongoDB (Atlas) You can find your connection string by logging in to the Atlas Dashboard in your [MongoDB Account](https://account.mongodb.com/account/login).  
  
