@@ -1,43 +1,69 @@
 <!DOCTYPE html>
+
 <head>
   <title>TODO</title>
 
-  <link rel="icon" type="image/png" href="favicon.png" />
+  <link
+    rel="icon"
+    type="image/png"
+    href="favicon.png"
+  />
   <!-- Fonts via Adobe -->
-  <link rel="stylesheet" href="https://use.typekit.net/gsh0vna.css" />
-  <link rel="stylesheet" href="style.css" type="text/css" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link
+    rel="stylesheet"
+    href="https://use.typekit.net/gsh0vna.css"
+  />
+  <link
+    rel="stylesheet"
+    href="style.css"
+    type="text/css"
+  />
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  />
 </head>
+
 <body>
   <main>
     <header>
       <h2>
         <span class="title">TODO</span>
-        <i>/</i>
+        <i>with</i>
         <a
           target="_blank"
           href="https://developer.mozilla.org/en-US/docs/Web/API/Window/localStorage"
         >
-          <svg
-            stroke="currentColor"
-            fill="currentColor"
-            stroke-width="0"
-            viewBox="0 0 448 512"
-            height="1em"
-            width="1em"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M448 73.143v45.714C448 159.143 347.667 192 224 192S0 159.143 0 118.857V73.143C0 32.857 100.333 0 224 0s224 32.857 224 73.143zM448 176v102.857C448 319.143 347.667 352 224 352S0 319.143 0 278.857V176c48.125 33.143 136.208 48.572 224 48.572S399.874 209.143 448 176zm0 160v102.857C448 479.143 347.667 512 224 512S0 479.143 0 438.857V336c48.125 33.143 136.208 48.572 224 48.572S399.874 369.143 448 336z"
-            ></path>
-          </svg>
-          <span>MongoDB</span>
+          <img
+            width="150"
+            src="./assets/mongo.svg"
+            alt="MongoDB"
+          />
+        </a>
+        <i>+</i>
+        <a
+          target="_blank"
+          href="https://developer.mozilla.org/en-US/docs/Web/API/Window/localStorage"
+        >
+          <img
+            width="125"
+            src="./assets/prisma.svg"
+            alt="Prisma"
+          />
         </a>
       </h2>
     </header>
     <!-- Here is the input form for new TODO items. JavaScript will listen for submissions on it -->
-    <form id="dataForm" autocomplete="off">
-      <input id="textInput" type="text" name="content" autocomplete="false" />
+    <form
+      id="dataForm"
+      autocomplete="off"
+    >
+      <input
+        id="textInput"
+        type="text"
+        name="content"
+        autocomplete="false"
+      />
       <button class="create"></button>
     </form>
     <ul id="itemList">
@@ -55,20 +81,25 @@
         TODO list app created by
         <a href="https://nsitu.ca">Harold Sikkema</a> in the context of Systems
         Design (Databases and Dynamic Data) in the
-        <a href="https://ixd.sheridancollege.ca/"
-          >Interaction Design Program at Sheridan College</a
-        >. This app uses <a href="https://www.mongodb.com/cloud/atlas/">MongoDB Atlas</a> to persist a collection of TODO items. It communicates with MongoDB using <a href="https://www.prisma.io/">Prisma ORM</a> via a REST API built with <a href="https://expressjs.com/">Express</a>. API endpoints illustrate a mapping of <a href="https://www.mongodb.com/docs/manual/crud/">CRUD</a> operations onto <a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods">HTTP Verbs</a>. Data storage is
+        <a href="https://ixd.sheridancollege.ca/">Interaction Design Program at Sheridan College</a>. This app uses <a
+          href="https://www.mongodb.com/cloud/atlas/"
+        >MongoDB Atlas</a> to persist a collection of TODO items. It communicates with MongoDB using <a
+          href="https://www.prisma.io/"
+        >Prisma ORM</a> via a REST API built with <a href="https://expressjs.com/">Express</a>. API endpoints illustrate
+        a mapping of <a href="https://www.mongodb.com/docs/manual/crud/">CRUD</a> operations onto <a
+          href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods"
+        >HTTP Verbs</a>. Data storage is
         handled on the frontend via a set of functions: <i>createData</i>, <i>readData</i>,
         <i>updateData</i>, <i>deleteData</i>, as per the the acronym
-        <a href="https://developer.mozilla.org/en-US/docs/Glossary/CRUD">CRUD</a
-        >. To keep things modular, functions are imported from a separate
-        <a
-          href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Modules"
-          >module</a
-        >, <i>crud.js</i>
+        <a href="https://developer.mozilla.org/en-US/docs/Glossary/CRUD">CRUD</a>. To keep things modular, functions are
+        imported from a separate
+        <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Modules">module</a>, <i>crud.js</i>
       </p>
     </footer>
   </main>
 
-  <script src="script.js" type="module"></script>
+  <script
+    src="script.js"
+    type="module"
+  ></script>
 </body>
